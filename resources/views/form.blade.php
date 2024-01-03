@@ -40,6 +40,6 @@
         @isset($task)
             @method('PUT')
         @endisset
-        <button type="submit" class="btn btn-primary">{{isset($task) ? 'Edit' : 'Add'}}</button>
+        <button type="submit" class="btn btn-primary">{{isset($task) ? 'Edit Task' : 'Add Task'}}</button>
     </form>
 @endsection

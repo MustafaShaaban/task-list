@@ -58,6 +58,12 @@
         return redirect()->route('tasks.show', ['task' => $task->id])->with('success', 'Task has been updated successfully!');
     })->name('tasks.update');
 
+    Route::put('/tasks/{task}/toggle-complete', function(Task $task){
+        $task->toggleComplete();
+
+        return redirect()->back()->with('success', 'Task has been updated successfully!');
+    })->name('tasks.toggle-complete');
+
     Route::delete('/tasks/{task}', function(Task $task){
         $task->delete();
 
