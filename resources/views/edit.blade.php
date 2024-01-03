@@ -13,7 +13,7 @@
 
 
 @section('content')
-    <form method="POST" action="{{ route('tasks.update', ['id'=> $task->id]) }}">
+    <form method="POST" action="{{ route('tasks.update', ['task'=> $task->id]) }}">
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" name="title" id="title" class="form-control" value="{{$task->title}}" placeholder="" aria-describedby="helpId">
