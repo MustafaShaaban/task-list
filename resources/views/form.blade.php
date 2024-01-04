@@ -41,5 +41,6 @@
             @method('PUT')
         @endisset
         <button type="submit" class="btn btn-primary">{{isset($task) ? 'Edit Task' : 'Add Task'}}</button>
+        <a href="{{route('tasks.index')}}"> Cancel</a>
     </form>
 @endsection
