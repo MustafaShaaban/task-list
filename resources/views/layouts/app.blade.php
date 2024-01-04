@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Laravel Task List Project</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
         {{-- blade-formatter-disabled --}}
         {{-- blade-formatter-enabled --}}
         @yield('styles')
